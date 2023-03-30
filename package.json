@@ -44,7 +44,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
-    "commit-msg": "esno scripts/verifyCommit.ts"
+    "commit-msg": "npx esno scripts/verifyCommit.ts"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
