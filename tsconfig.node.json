@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    // 跳过默认的 lib 检查
+    "skipDefaultLibCheck": true,
+    // module
+    "module": "ESNext",
+    // moduleResolution
+    "moduleResolution": "bundler",
+    // 允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts", "*.js", "scripts/**/*"]
+}

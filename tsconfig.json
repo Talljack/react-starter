@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    // base 目录
+    "baseUrl": ".",
+    // 编译目标
+    "target": "esnext",
+    // 模块
+    "module": "esnext",
+    // 模块解析策略
+    "moduleResolution": "node",
+    // 生成声明文件
+    "declaration": true,
+    // lib
+    "lib": ["esnext", "dom", "dom.iterable"],
+    // 解析 json
+    "resolveJsonModule": true,
+    // jsx 代码生成
+    "jsx": "react-jsx",
+    // 不生成输出文件
+    "noEmit": true,
+    // 将每个文件作为单独的模块
+    "isolatedModules": true,
+    // 严格模式
+    "strict": true,
+    // 不允许 js
+    "allowJs": false,
+    // ESM 转译开启
+    "esModuleInterop": true,
+    // 跳过默认的 lib 检查
+    "skipLibCheck": true,
+    // 允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "scripts/**/*.ts",
+    "scripts/**/*.tsx",
+    "scripts/**/*.d.ts",
+    "types/**/*.d.ts",
+    "types/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
