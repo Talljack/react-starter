@@ -15,12 +15,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
-      - name: Set node version to ${{ matrix.node_version }}
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
           cache: "pnpm"
 
       - name: Install pnpm
@@ -33,7 +33,7 @@ jobs:
         run: pnpm build
 
       - name: Test
-        run: pnpm test
+        run: pnpm run test:cov
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -42,10 +42,10 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Set node version to ${{ matrix.node_version }}
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
           cache: "pnpm"
 
       - name: Install pnpm
@@ -55,4 +55,4 @@ jobs:
         run: pnpm install
 
       - name: Lint
-        run: pnpm lint
+        run: pnpm run lint

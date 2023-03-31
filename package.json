@@ -12,12 +12,18 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "simple-git-hooks",
-    "lint": "eslint --cache .",
+    "lint": "eslint --fix --cache .",
     "format": "prettier --write --cache .",
     "dev": "vite",
-    "build": "tsc --noEmit && vite build"
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.15",
     "@tanstack/react-router": "0.0.1-beta.83",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,21 +32,25 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.2",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.31",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.29.8",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "esno": "^0.16.3",
+    "happy-dom": "^8.9.0",
     "lint-staged": "^13.2.0",
     "picocolors": "^1.0.0",
     "prettier": "^2.8.7",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
-    "vite-tsconfig-paths": "^4.0.7"
+    "vite-tsconfig-paths": "^4.0.7",
+    "vitest": "^0.29.8"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
