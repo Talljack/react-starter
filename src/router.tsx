@@ -1,5 +1,5 @@
 import { ReactRouter, RootRoute, Route, createBrowserHistory } from '@tanstack/react-router';
-import Root from './components/Root';
+import Root from './pages/Root';
 import Home from './pages/Home';
 import About from './pages/About';
 const rootRoute = new RootRoute({

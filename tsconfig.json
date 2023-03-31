@@ -16,6 +16,8 @@
     "resolveJsonModule": true,
     // jsx 代码生成
     "jsx": "react-jsx",
+    // jsx 导入源
+    "jsxImportSource": "@emotion/react",
     // 不生成输出文件
     "noEmit": true,
     // 将每个文件作为单独的模块
@@ -31,7 +33,7 @@
     // 允许从没有设置默认导出的模块中默认导入
     "allowSyntheticDefaultImports": true,
     // types
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "@emotion/react/types/css-prop"],
     "paths": {
       "@/*": ["src/*"]
     }
