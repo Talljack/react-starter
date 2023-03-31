@@ -1,6 +1,7 @@
 {
   "name": "react-starter",
   "version": "1.0.0",
+  "packageManager": "pnpm@8.0.0",
   "description": "My React template",
   "author": "",
   "license": "ISC",
