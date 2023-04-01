@@ -2,7 +2,6 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import resources from './locales';
-import config from './utils/config';
 
 function setupI18n() {
   i18n
@@ -17,4 +16,4 @@ function setupI18n() {
     });
 }
 
-config.VITE_I18N && setupI18n();
+import.meta.env.VITE_I18N && setupI18n();
