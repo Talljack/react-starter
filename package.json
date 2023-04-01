@@ -37,6 +37,7 @@
     "jotai-immer": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-use": "^17.4.0",
     "use-immer": "^0.8.1"
   },
   "devDependencies": {
