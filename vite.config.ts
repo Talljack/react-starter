@@ -3,7 +3,7 @@ import { loadEnv } from 'vite';
 import type { ConfigEnv, UserConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { parseEnv } from './scripts/util';
+import { parseEnv } from './src/utils/parseEnv';
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd();

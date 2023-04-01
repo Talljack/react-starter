@@ -1,6 +1,6 @@
 import type { loadEnv } from 'vite';
 
-interface ParseEnv {
+export interface ParseEnv {
   [key: keyof ReturnType<typeof loadEnv>]: any;
 }
 

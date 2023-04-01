@@ -33,7 +33,7 @@
     // 允许从没有设置默认导出的模块中默认导入
     "allowSyntheticDefaultImports": true,
     // types
-    "types": ["vitest/globals", "@emotion/react/types/css-prop"],
+    "types": ["vitest/globals", "@emotion/react/types/css-prop", "vite/client"],
     "paths": {
       "@/*": ["src/*"],
       "#/*": ["types/*"]
