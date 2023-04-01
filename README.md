@@ -1,6 +1,6 @@
 # react-starter
 
-A simple React Starter Template, help you to start your react project quickly.
+A simple React Starter Template, helps you to start your react project quickly.
 
 ## Includes the following
 
