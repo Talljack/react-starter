@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           height: 300px;
         `}
       >
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img
             src={reactSvg}
             className="logo react"
