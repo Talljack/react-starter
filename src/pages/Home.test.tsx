@@ -1,10 +1,15 @@
-import { describe, expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { describe, test } from 'vitest';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import Home from './Home';
 
 describe('Home component', () => {
-  test('should render the component', () => {
+  test('should render the component', async () => {
     render(<Home />);
-    expect(screen.getByText(/Home/i)).toBeDefined();
+    const btn = screen.getByTestId('count-btn');
+    expect(btn.textContent).toEqual('0');
+    fireEvent.click(btn);
+    await waitFor(() => {
+      expect(btn.textContent).toEqual('1');
+    });
   });
 });
