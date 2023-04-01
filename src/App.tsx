@@ -4,6 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import type { PaletteMode } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { green, purple } from '@mui/material/colors';
+import { DevTools } from 'jotai-devtools';
 import { router } from './router';
 import { ColorModeContext } from '@/context';
 
@@ -36,6 +37,7 @@ const App: React.FC = () => {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <DevTools />
         <RouterProvider router={router} />
       </ThemeProvider>
     </ColorModeContext.Provider>

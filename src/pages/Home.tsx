@@ -1,11 +1,13 @@
 import React from 'react';
-import { useImmer } from 'use-immer';
+import { atom, useAtom } from 'jotai';
 import { Button } from '@mui/material';
 import { css } from '@emotion/react';
 import reactSvg from '@/assets/react.svg';
 
+// jotai docs: https://jotai.org/docs/core/use-atom
+const countAtom = atom(0);
 const Home: React.FC = () => {
-  const [count, setCount] = useImmer(0);
+  const [count, setCount] = useAtom(countAtom);
   return (
     <div
       className="home"

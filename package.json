@@ -32,6 +32,9 @@
     "@tanstack/router": "0.0.1-beta.83",
     "classnames": "^2.3.2",
     "immer": "^9.0.21",
+    "jotai": "^2.0.3",
+    "jotai-devtools": "^0.4.0",
+    "jotai-immer": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "use-immer": "^0.8.1"
