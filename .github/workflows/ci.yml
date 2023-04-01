@@ -9,7 +9,8 @@ on:
       - main
 
 jobs:
-  test:
+  build:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,27 +33,11 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Test
-        run: pnpm run test:cov
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install
-
       - name: Lint
         run: pnpm run lint
+
+      - name: Test
+        run: pnpm run test:cov
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
