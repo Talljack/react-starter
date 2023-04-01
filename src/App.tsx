@@ -5,8 +5,7 @@ import type { PaletteMode } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { green, purple } from '@mui/material/colors';
 import { router } from './router';
-
-export const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+import { ColorModeContext } from '@/context';
 
 const App: React.FC = () => {
   const [mode, setMode] = React.useState<PaletteMode>('light');
