@@ -36,10 +36,7 @@ pnpm install
 ```
 
 4. start the project
-   ```bash
-   pnpm dev
-   ```
 
-```
-
+```bash
+pnpm dev
 ```
