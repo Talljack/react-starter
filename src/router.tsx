@@ -1,7 +1,8 @@
-import { ReactRouter, RootRoute, Route, createBrowserHistory } from '@tanstack/react-router';
+import { RootRoute, Route, Router, createBrowserHistory } from '@tanstack/router';
 import Root from './pages/Root';
 import Home from './pages/Home';
 import About from './pages/About';
+
 const rootRoute = new RootRoute({
   component: Root,
 });
@@ -20,9 +21,9 @@ const aboutRoute = new Route({
 const routeTree = rootRoute.addChildren([homeRoute, aboutRoute]);
 // history: 'browser' | 'memory' | 'hash'
 const browserHistory = createBrowserHistory();
-const router = new ReactRouter({ routeTree, history: browserHistory });
+const router = new Router({ routeTree, history: browserHistory });
 // Register your router for maximum type safety
-declare module '@tanstack/react-router' {
+declare module '@tanstack/router' {
   interface Register {
     router: typeof router;
   }

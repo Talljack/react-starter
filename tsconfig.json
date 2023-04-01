@@ -35,7 +35,8 @@
     // types
     "types": ["vitest/globals", "@emotion/react/types/css-prop"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
     }
   },
   "include": [

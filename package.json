@@ -29,12 +29,11 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.15",
     "@tanstack/react-router": "0.0.1-beta.83",
+    "@tanstack/router": "0.0.1-beta.83",
     "classnames": "^2.3.2",
     "immer": "^9.0.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router": "^6.10.0",
-    "react-router-dom": "^6.10.0",
     "use-immer": "^0.8.1"
   },
   "devDependencies": {

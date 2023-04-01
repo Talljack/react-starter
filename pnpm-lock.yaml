@@ -25,6 +25,9 @@ dependencies:
   '@tanstack/react-router':
     specifier: 0.0.1-beta.83
     version: 0.0.1-beta.83(react-dom@18.2.0)(react@18.2.0)
+  '@tanstack/router':
+    specifier: 0.0.1-beta.83
+    version: 0.0.1-beta.83
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
@@ -37,12 +40,6 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
-  react-router:
-    specifier: ^6.10.0
-    version: 6.10.0(react@18.2.0)
-  react-router-dom:
-    specifier: ^6.10.0
-    version: 6.10.0(react-dom@18.2.0)(react@18.2.0)
   use-immer:
     specifier: ^0.8.1
     version: 0.8.1(immer@9.0.21)(react@18.2.0)
@@ -1073,11 +1070,6 @@ packages:
 
   /@popperjs/core@2.11.7:
     resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
-    dev: false
-
-  /@remix-run/router@1.5.0:
-    resolution: {integrity: sha512-bkUDCp8o1MvFO+qxkODcbhSqRa6P2GXgrGZVpt0dCXNW2HCSCqYI0ZoAqEOSAjRWmmlKcYgFvN4B4S+zo/f8kg==}
-    engines: {node: '>=14'}
     dev: false
 
   /@tanstack/react-router@0.0.1-beta.83(react-dom@18.2.0)(react@18.2.0):
@@ -3920,29 +3912,6 @@ packages:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /react-router-dom@6.10.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-E5dfxRPuXKJqzwSe/qGcqdwa18QiWC6f3H3cWXM24qj4N0/beCIf/CWTipop2xm7mR0RCS99NnaqPNjHtrAzCg==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      react: '>=16.8'
-      react-dom: '>=16.8'
-    dependencies:
-      '@remix-run/router': 1.5.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-router: 6.10.0(react@18.2.0)
-    dev: false
-
-  /react-router@6.10.0(react@18.2.0):
-    resolution: {integrity: sha512-Nrg0BWpQqrC3ZFFkyewrflCud9dio9ME3ojHCF/WLsprJVzkq3q3UeEhMCAW1dobjeGbWgjNn/PVF6m46ANxXQ==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      react: '>=16.8'
-    dependencies:
-      '@remix-run/router': 1.5.0
-      react: 18.2.0
-    dev: false
 
   /react-transition-group@4.4.5(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
