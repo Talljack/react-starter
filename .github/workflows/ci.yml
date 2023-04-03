@@ -38,10 +38,5 @@ jobs:
       - name: Test
         run: pnpm run test:cov
 
-      - name: LGTM
-        uses: beeceej/lgtm@v0.0.3
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
