@@ -11,7 +11,7 @@ A simple React Starter Template, helps you to start your react project quickly.
 - Typescript
 - Vite
 - Vitest
-- Componet library(@mui/material)
+- Componet library(antd)
 - Tailwindcss
 - I18n
 
