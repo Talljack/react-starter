@@ -1,21 +1,36 @@
 import { Outlet } from '@tanstack/react-router';
 import React from 'react';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { ContainerOutlined, DesktopOutlined, PieChartOutlined } from '@ant-design/icons';
+import { css } from '@emotion/react';
 import Theme from '@/components/Theme';
 
 const { Header, Content, Sider } = Layout;
 
-const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, index) => {
-  const key = String(index + 1);
+type MenuItem = Required<MenuProps>['items'][number];
 
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuItem[],
+  type?: 'group',
+): MenuItem {
   return {
-    key: `sub${key}`,
-    icon: React.createElement(icon),
-    label: `subnav ${key}`,
-  };
-});
+    key,
+    icon,
+    children,
+    label,
+    type,
+  } as MenuItem;
+}
+
+const items: MenuItem[] = [
+  getItem('Option 1', '1', <PieChartOutlined />),
+  getItem('Option 2', '2', <DesktopOutlined />),
+  getItem('Option 3', '3', <ContainerOutlined />),
+];
 
 const Root: React.FC = () => {
   const {
@@ -23,19 +38,21 @@ const Root: React.FC = () => {
   } = theme.useToken();
 
   return (
-    <Layout>
-      <Header className="header">
+    <Layout style={{ height: '100vh' }}>
+      <Header
+        className="header"
+        css={css`
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        `}
+      >
         My Template
         <Theme />
       </Header>
       <Layout>
-        <Sider width={200} style={{ background: colorBgContainer }}>
-          <Menu
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            style={{ height: '100%', borderRight: 0 }}
-            items={items2}
-          />
+        <Sider width={200}>
+          <Menu theme="dark" items={items} />
         </Sider>
         <Layout style={{ padding: '0 24px 24px' }}>
           <Breadcrumb style={{ margin: '16px 0' }} items={[{ title: 'sample' }]}></Breadcrumb>
