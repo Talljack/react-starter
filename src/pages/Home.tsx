@@ -1,6 +1,6 @@
 import React from 'react';
 import { atom, useAtom } from 'jotai';
-import { Button } from '@mui/material';
+import { Button } from 'antd';
 import { css } from '@emotion/react';
 import reactSvg from '@/assets/react.svg';
 
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
         </a>
       </div>
       <div className="gap-x-0">
-        <Button data-testid="count-btn" variant="outlined" onClick={() => setCount((count) => count + 1)}>
+        <Button data-testid="count-btn" onClick={() => setCount((count) => count + 1)}>
           {count}
         </Button>
       </div>

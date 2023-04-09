@@ -1,7 +1,7 @@
 {
   "name": "react-starter",
   "version": "1.0.0",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@8.1.0",
   "description": "My React template",
   "author": "",
   "license": "ISC",
@@ -21,15 +21,15 @@
     "test:cov": "vitest run --coverage"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "@antfu/eslint-config-react": "^0.38.2",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@headlessui/react": "^1.7.13",
     "@headlessui/tailwindcss": "^0.1.2",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.15",
     "@tanstack/react-router": "0.0.1-beta.83",
     "@tanstack/router": "0.0.1-beta.83",
+    "antd": "^5.4.0",
     "classnames": "^2.3.2",
     "i18next": "^22.4.13",
     "i18next-browser-languagedetector": "^7.0.1",
@@ -42,7 +42,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.2.0",
     "react-use": "^17.4.0",
-    "use-immer": "^0.8.1"
+    "use-immer": "^0.9.0"
   },
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
@@ -57,7 +57,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "esno": "^0.16.3",
-    "happy-dom": "^8.9.0",
+    "happy-dom": "^9.1.0",
     "lint-staged": "^13.2.0",
     "picocolors": "^1.0.0",
     "postcss": "^8.4.21",

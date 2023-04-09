@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,10 +24,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm -v && pnpm install
 
       - name: Build
         run: pnpm build
