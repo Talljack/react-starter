@@ -8,7 +8,7 @@ A simple React Starter Template, helps you to start your react project quickly.
 - [React Router(@tanstack/router)](https://github.com/TanStack/router)
 - [React state management(jotai)](https://jotai.org/)
 - [React hooks(react-use)](https://github.com/streamich/react-use)
-- Typescript
+- [Typescript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/guide/)
 - [Vitest](https://vitest.dev/)
 - [Componet library(@mui/material)](https://mui.com/)
