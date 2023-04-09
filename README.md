@@ -23,7 +23,7 @@ A simple React Starter Template, helps you to start your react project quickly.
 - [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 - ci
 - vscode settings
-- env config
+- [env config](https://vitejs.dev/guide/env-and-mode.html#env-files)
 
 ## Getting Started
 
