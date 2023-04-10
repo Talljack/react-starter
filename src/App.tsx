@@ -5,6 +5,7 @@ import { DevTools } from 'jotai-devtools';
 import { router } from './router';
 import 'antd/dist/reset.css';
 
+// App组件
 const App: React.FC = () => {
   return (
     <ConfigProvider
@@ -17,6 +18,7 @@ const App: React.FC = () => {
     >
       <DevTools />
       <RouterProvider router={router} />
+      <div>这是一个demo</div>
     </ConfigProvider>
   );
 };
