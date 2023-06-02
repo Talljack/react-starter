@@ -11,12 +11,5 @@
     "allowSyntheticDefaultImports": true,
     "types": ["vite/client"]
   },
-  "include": [
-    "vite.config.ts",
-    "*.js",
-    "scripts/**/*",
-    "src/utils/*.ts",
-    "src/configs/config.ts",
-    "src/configs/config.ts"
-  ]
+  "include": ["vite.config.ts"]
 }

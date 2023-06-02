@@ -1,74 +1,26 @@
 import { Outlet } from '@tanstack/react-router';
 import React from 'react';
-import type { MenuProps } from 'antd';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { ContainerOutlined, DesktopOutlined, PieChartOutlined } from '@ant-design/icons';
-import { css } from '@emotion/react';
 import Theme from '@/components/Theme';
 
-const { Header, Content, Sider } = Layout;
-
-type MenuItem = Required<MenuProps>['items'][number];
-
-function getItem(
-  label: React.ReactNode,
-  key: React.Key,
-  icon?: React.ReactNode,
-  children?: MenuItem[],
-  type?: 'group',
-): MenuItem {
-  return {
-    key,
-    icon,
-    children,
-    label,
-    type,
-  } as MenuItem;
-}
-
-const items: MenuItem[] = [
-  getItem('Option 1', '1', <PieChartOutlined />),
-  getItem('Option 2', '2', <DesktopOutlined />),
-  getItem('Option 3', '3', <ContainerOutlined />),
-];
-
 const Root: React.FC = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-
   return (
-    <Layout style={{ height: '100vh' }}>
-      <Header
-        className="header"
-        css={css`
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        `}
+    <div style={{ height: '100vh' }} className="relative">
+      <div
+        className="header flex items-center justify-between h-14 sticky top-0 bg-white border-b
+      border-b-slate-300 dark:border-b-slate-800 shadow-md z-1 dark:bg-zinc-500 text-black dark:text-white"
       >
         My Template
         <Theme />
-      </Header>
-      <Layout>
-        <Sider width={200}>
-          <Menu theme="dark" items={items} />
-        </Sider>
-        <Layout style={{ padding: '0 24px 24px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }} items={[{ title: 'sample' }]}></Breadcrumb>
-          <Content
-            style={{
-              padding: 24,
-              margin: 0,
-              minHeight: 280,
-              background: colorBgContainer,
-            }}
-          >
-            <Outlet />
-          </Content>
-        </Layout>
-      </Layout>
-    </Layout>
+      </div>
+      <div
+        className="h-full w-full items-center absolute bg-white dark:bg-zinc-600"
+        style={{
+          height: 'calc(100vh - 3.5rem)',
+        }}
+      >
+        <Outlet />
+      </div>
+    </div>
   );
 };
 
