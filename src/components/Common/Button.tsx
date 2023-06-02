@@ -14,6 +14,7 @@ export interface Props {
   bgColor?: string;
   hairline?: boolean;
   loadingText?: string;
+  dataTestId?: string;
 }
 
 const LoadingSVG: FC = () => {
@@ -81,6 +82,7 @@ const Button: FC<Props> = (props) => {
       style={{ ...props.style, backgroundColor: props.bgColor }}
       disabled={props.disabled}
       type="button"
+      data-testid={props.dataTestId}
     >
       {props.loading && (
         <div className="inline-flex">
@@ -88,7 +90,11 @@ const Button: FC<Props> = (props) => {
           <span>{props.loadingText || 'Loading...'}</span>
         </div>
       )}
-      {typeof props.children === 'string' ? <span className={sizeClassName}>{props.children}</span> : props.children}
+      {typeof props.children === 'string' || typeof props.children === 'number' ? (
+        <span>{props.children}</span>
+      ) : (
+        props.children
+      )}
     </button>
   );
 };

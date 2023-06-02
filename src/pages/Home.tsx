@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         </a>
       </div>
       <div className="gap-x-0">
-        <Button data-testid="count-btn" type="primary" onClick={() => setCount((count) => count + 1)}>
+        <Button dataTestId="count-btn" type="primary" onClick={() => setCount((count) => count + 1)}>
           {count}
         </Button>
       </div>
