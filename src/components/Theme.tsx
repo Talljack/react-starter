@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, theme } from 'antd';
-import { useTheme } from '@/hooks/useTheme';
+import { useAtom } from 'jotai';
+import Button from './Common/Button';
+import { themeAtom } from '@/state';
 
 function LightIcon() {
   return (
@@ -63,14 +64,13 @@ function DarkIcon() {
   );
 }
 const Theme: React.FC = () => {
-  const [userTheme, setUserTheme] = useTheme();
+  const [userTheme, setUserTheme] = useAtom(themeAtom);
   const changeTheme = () => {
-    const algorithm = userTheme.algorithm === theme.defaultAlgorithm ? theme.darkAlgorithm : theme.defaultAlgorithm;
-    setUserTheme({ algorithm });
+    setUserTheme(userTheme === 'dark' ? 'light' : 'dark');
   };
   return (
-    <Button onClick={changeTheme} color="inherit">
-      {userTheme.algorithm === theme.defaultAlgorithm ? <DarkIcon /> : <LightIcon />}
+    <Button onClick={changeTheme} type="default">
+      {userTheme === 'light' ? <DarkIcon /> : <LightIcon />}
     </Button>
   );
 };
