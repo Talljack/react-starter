@@ -56,16 +56,16 @@ const Button: FC<Props> = (props) => {
     type === 'default'
       ? 'border-gray-300'
       : type === 'primary'
-      ? 'border-blue-500'
-      : type === 'info'
-      ? 'border-blue-500'
-      : type === 'success'
-      ? 'border-green-500'
-      : type === 'warning'
-      ? 'border-yellow-500'
-      : type === 'danger'
-      ? 'border-red-500'
-      : 'border-gray-300',
+        ? 'border-blue-500'
+        : type === 'info'
+          ? 'border-blue-500'
+          : type === 'success'
+            ? 'border-green-500'
+            : type === 'warning'
+              ? 'border-yellow-500'
+              : type === 'danger'
+                ? 'border-red-500'
+                : 'border-gray-300',
   );
   return (
     <button

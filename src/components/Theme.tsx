@@ -3,6 +3,9 @@ import { useAtom } from 'jotai';
 import Button from './Common/Button';
 import { themeAtom } from '@/state';
 
+/**
+ *
+ */
 function LightIcon() {
   return (
     <svg
@@ -35,6 +38,9 @@ function LightIcon() {
     </svg>
   );
 }
+/**
+ *
+ */
 function DarkIcon() {
   return (
     <svg

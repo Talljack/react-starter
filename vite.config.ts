@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { parseEnv } from './src/utils/parseEnv';
 
-export default ({ command, mode }: ConfigEnv): UserConfig => {
+export default ({ mode }: ConfigEnv): UserConfig => {
   const root = process.cwd();
   const env = loadEnv(mode, root);
   const { VITE_PORT, VITE_DROP_CONSOLE, VITE_DROP_DEBUGGER, VITE_PUBLIC_PATH = '/' } = parseEnv(env);
@@ -22,10 +22,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       chunkSizeWarningLimit: 2000,
     },
     esbuild: {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-expect-error
       drop,
     },
+    // @ts-expect-error
     plugins: [react(), tsconfigPaths()],
     test: {
       environment: 'happy-dom',
