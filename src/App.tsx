@@ -1,7 +1,7 @@
-import type { FC } from 'react';
-import { RouterProvider } from '@tanstack/react-router';
-import { DevTools } from 'jotai-devtools';
-import { router } from './router';
+import type { FC } from 'react'
+import { RouterProvider } from '@tanstack/react-router'
+import { DevTools } from 'jotai-devtools'
+import { router } from './router'
 
 // App 组件
 const App: FC = () => {
@@ -10,7 +10,7 @@ const App: FC = () => {
       <DevTools />
       <RouterProvider router={router} />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App

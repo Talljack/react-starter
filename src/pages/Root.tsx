@@ -1,6 +1,6 @@
-import { Outlet } from '@tanstack/react-router';
-import React from 'react';
-import Theme from '@/components/Theme';
+import { Outlet } from '@tanstack/react-router'
+import React from 'react'
+import Theme from '@/components/Theme'
 
 const Root: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const Root: React.FC = () => {
         <Outlet />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Root;
+export default Root

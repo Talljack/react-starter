@@ -1,4 +1,4 @@
-import createEslintConfig from 'talljack-eslint-config';
+import createEslintConfig from 'talljack-eslint-config'
 
 export default createEslintConfig({
   react: true,
@@ -12,4 +12,4 @@ export default createEslintConfig({
     '@typescript-eslint/ban-ts-comment': 'off',
     'ts/ban-ts-comment': 'warn',
   },
-});
+})

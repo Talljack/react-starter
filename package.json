@@ -81,12 +81,6 @@
     "commit-msg": "npx esno scripts/verifyCommit.ts"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix --cache",
-      "prettier --write --cache"
-    ],
-    "*.{json,md,css,scss,html}": [
-      "prettier --write --cache"
-    ]
+    "*": "eslint . --fix"
   }
 }

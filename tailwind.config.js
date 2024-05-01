@@ -6,4 +6,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require('@headlessui/tailwindcss')],
-};
+}
