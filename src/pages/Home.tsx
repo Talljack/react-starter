@@ -1,12 +1,12 @@
-import React from 'react';
-import { atom, useAtom } from 'jotai';
-import reactSvg from '@/assets/react.svg';
-import Button from '@/components/Common/Button';
+import React from 'react'
+import { atom, useAtom } from 'jotai'
+import reactSvg from '@/assets/react.svg'
+import Button from '@/components/Common/Button'
 
 // jotai docs: https://jotai.org/docs/core/use-atom
-const countAtom = atom(0);
+const countAtom = atom(0)
 const Home: React.FC = () => {
-  const [count, setCount] = useAtom(countAtom);
+  const [count, setCount] = useAtom(countAtom)
   return (
     <div className="flex flex-col items-center justify-center w-full home">
       <div className="header w-[300px] h-[300px]">
@@ -15,12 +15,12 @@ const Home: React.FC = () => {
         </a>
       </div>
       <div className="gap-x-0">
-        <Button dataTestId="count-btn" type="primary" onClick={() => setCount((count) => count + 1)}>
+        <Button dataTestId="count-btn" type="primary" onClick={() => setCount(count => count + 1)}>
           {count}
         </Button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

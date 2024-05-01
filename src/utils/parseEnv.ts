@@ -1,7 +1,7 @@
-import type { loadEnv } from 'vite';
+import type { loadEnv } from 'vite'
 
 export interface ParseEnv {
-  [key: keyof ReturnType<typeof loadEnv>]: any;
+  [key: keyof ReturnType<typeof loadEnv>]: any
 }
 
 /**
@@ -9,13 +9,13 @@ export interface ParseEnv {
  * @param env
  */
 export function parseEnv(env: ReturnType<typeof loadEnv>) {
-  const res: ParseEnv = {};
+  const res: ParseEnv = {}
   Object.entries(env).forEach(([key, value]) => {
-    let envValue: any = value?.replace(/\\n/g, '\n');
-    envValue = envValue === 'true' ? true : envValue === 'false' ? false : envValue;
-    if (key === 'VITE_PORT') envValue = Number(envValue);
+    let envValue: any = value?.replace(/\\n/g, '\n')
+    envValue = envValue === 'true' ? true : envValue === 'false' ? false : envValue
+    if (key === 'VITE_PORT') envValue = Number(envValue)
 
-    res[key] = envValue;
-  });
-  return res;
+    res[key] = envValue
+  })
+  return res
 }

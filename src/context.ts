@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 export interface ColorModeContextValue {
-  toggleColorMode: () => void;
+  toggleColorMode: () => void
 }
 
-export const ColorModeContext = React.createContext<ColorModeContextValue>({ toggleColorMode: () => {} });
+export const ColorModeContext = React.createContext<ColorModeContextValue>({ toggleColorMode: () => {} })
