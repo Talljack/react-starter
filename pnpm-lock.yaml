@@ -61,8 +61,8 @@ importers:
         version: 0.9.0(immer@10.0.4)(react@18.3.1)
     devDependencies:
       '@testing-library/react':
-        specifier: ^15.0.2
-        version: 15.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^15.0.7
+        version: 15.0.7(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^20.12.7
         version: 20.12.7
@@ -161,10 +161,6 @@ packages:
     resolution: {integrity: sha512-hv/aXDILyroHioVW27etFMV+IX6FyNn41YwbeGIAt5h/7fUTQvHI5w3ols8qYAT8aQt3kzexq5ZwxFDxNHIhdQ==}
     engines: {node: '>= 16'}
 
-  '@babel/code-frame@7.18.6':
-    resolution: {integrity: sha512-TDCmlK5eOvH+eH7cdAFlNXeVJqWIQ7gW9tY1GJIpUtFb6CmjVyq2VM3u71bOyR8CRihcCgMUYoDNyLXao3+70Q==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/code-frame@7.24.2':
     resolution: {integrity: sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==}
     engines: {node: '>=6.9.0'}
@@ -241,10 +237,6 @@ packages:
 
   '@babel/helpers@7.24.4':
     resolution: {integrity: sha512-FewdlZbSiwaVGlgT1DPANDuCHaDMiOo+D/IDYRFYjHOuv66xMSJ7fQwwODwRNAPkADIO/z1EoF/l2BCWlWABDw==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/highlight@7.18.6':
-    resolution: {integrity: sha512-u7stbOuYjaPezCuLj29hNW1v64M2Md2qupEKP1fHc7WdOA3DgLh37suiSrZYY7haUB7iBeQZ9P1uiRF359do3g==}
     engines: {node: '>=6.9.0'}
 
   '@babel/highlight@7.24.2':
@@ -966,12 +958,16 @@ packages:
     resolution: {integrity: sha512-PmJPnogldqoVFf+EwbHvbBJ98MmqASV8kLrBYgsDNxQcFMeIS7JFL48sfyXvuMtgmWO/wMhh25odr+8VhDmn4g==}
     engines: {node: '>=18'}
 
-  '@testing-library/react@15.0.2':
-    resolution: {integrity: sha512-5mzIpuytB1ctpyywvyaY2TAAUQVCZIGqwiqFQf6u9lvj/SJQepGUzNV18Xpk+NLCaCE2j7CWrZE0tEf9xLZYiQ==}
+  '@testing-library/react@15.0.7':
+    resolution: {integrity: sha512-cg0RvEdD1TIhhkm1IeYMQxrzy0MtUNfa3minv4MjbgcYzJAZ7yD0i0lwoPOTPr+INtiXFezt2o8xMSnyHhEn2Q==}
     engines: {node: '>=18'}
     peerDependencies:
+      '@types/react': ^18.0.0
       react: ^18.0.0
       react-dom: ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   '@types/aria-query@5.0.1':
     resolution: {integrity: sha512-XTIieEY+gvJ39ChLcB4If5zHtPxt3Syj5rgZR+e1ctpmK8NjPf0zFqsz4JpLJT0xla9GFDKjy8Cpu331nrmE1Q==}
@@ -3640,10 +3636,6 @@ snapshots:
       '@types/json-schema': 7.0.15
       js-yaml: 4.1.0
 
-  '@babel/code-frame@7.18.6':
-    dependencies:
-      '@babel/highlight': 7.18.6
-
   '@babel/code-frame@7.24.2':
     dependencies:
       '@babel/highlight': 7.24.2
@@ -3737,12 +3729,6 @@ snapshots:
       '@babel/types': 7.24.0
     transitivePeerDependencies:
       - supports-color
-
-  '@babel/highlight@7.18.6':
-    dependencies:
-      '@babel/helper-validator-identifier': 7.19.1
-      chalk: 2.4.2
-      js-tokens: 4.0.0
 
   '@babel/highlight@7.24.2':
     dependencies:
@@ -4274,8 +4260,8 @@ snapshots:
 
   '@testing-library/dom@10.0.0':
     dependencies:
-      '@babel/code-frame': 7.18.6
-      '@babel/runtime': 7.21.0
+      '@babel/code-frame': 7.24.2
+      '@babel/runtime': 7.24.4
       '@types/aria-query': 5.0.1
       aria-query: 5.3.0
       chalk: 4.1.2
@@ -4283,13 +4269,15 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/react@15.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@testing-library/react@15.0.7(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.24.4
       '@testing-library/dom': 10.0.0
       '@types/react-dom': 18.3.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.1
 
   '@types/aria-query@5.0.1': {}
 
@@ -6688,7 +6676,7 @@ snapshots:
 
   rtl-css-js@1.16.1:
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.24.4
 
   run-parallel@1.2.0:
     dependencies:
