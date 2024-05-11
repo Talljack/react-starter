@@ -18,8 +18,8 @@ importers:
         specifier: ^1.31.29
         version: 1.31.29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/router':
-        specifier: ^0.0.1-beta.83
-        version: 0.0.1-beta.83
+        specifier: '^0.0.1-beta.174 '
+        version: 0.0.1-beta.174
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -997,12 +997,8 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
 
-  '@tanstack/router@0.0.1-beta.83':
-    resolution: {integrity: sha512-cwkfyvgg7g60wbKZBRl1sbut+eYyE6bPc/Efz2ozFD//oV6qBUftoRm4PbN5cdPgrHjjLOFuOKW43EEUXM/exQ==, tarball: https://registry.npmmirror.com/@tanstack/router/-/router-0.0.1-beta.83.tgz}
-    engines: {node: '>=12'}
-
-  '@tanstack/store@0.0.1-beta.81':
-    resolution: {integrity: sha512-OYFQ4RmDjSIzJnJrhsvpSpM4+lO/3NBaXGloC5IO3YNm0Ewgy/MSCePJgUamstXPmBAaLC2KEgi4O9FHyzA6lw==, tarball: https://registry.npmmirror.com/@tanstack/store/-/store-0.0.1-beta.81.tgz}
+  '@tanstack/router@0.0.1-beta.174':
+    resolution: {integrity: sha512-n/qREl30a1P7Bww3lTNE1xpgnjuUcPik9ENptg3PJjsZWI/gTn8Q3kPxfK4atZAksuOsyBgp7xjteefbPmULUQ==, tarball: https://registry.npmmirror.com/@tanstack/router/-/router-0.0.1-beta.174.tgz}
     engines: {node: '>=12'}
 
   '@tanstack/store@0.1.3':
@@ -4359,14 +4355,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@tanstack/router@0.0.1-beta.83':
-    dependencies:
-      '@babel/runtime': 7.24.4
-      '@tanstack/store': 0.0.1-beta.81
-      tiny-invariant: 1.3.1
-      tiny-warning: 1.0.3
-
-  '@tanstack/store@0.0.1-beta.81': {}
+  '@tanstack/router@0.0.1-beta.174': {}
 
   '@tanstack/store@0.1.3': {}
 
