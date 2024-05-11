@@ -1,18 +1,23 @@
-import { RootRoute, Route, Router, createBrowserHistory } from '@tanstack/router'
+import {
+  createBrowserHistory,
+  createRootRoute,
+  createRoute,
+  createRouter,
+} from '@tanstack/react-router'
 import Root from './pages/Root'
 import Home from './pages/Home'
 import About from './pages/About'
 
-const rootRoute = new RootRoute({
+const rootRoute = createRootRoute({
   component: Root,
 })
-const homeRoute = new Route({
+const homeRoute = createRoute({
   getParentRoute: () => rootRoute,
   component: Home,
-  path: '/home',
+  path: '/',
 })
 // About page
-const aboutRoute = new Route({
+const aboutRoute = createRoute({
   getParentRoute: () => rootRoute,
   component: About,
   path: '/about',
@@ -21,12 +26,11 @@ const aboutRoute = new Route({
 const routeTree = rootRoute.addChildren([homeRoute, aboutRoute])
 // history: 'browser' | 'memory' | 'hash'
 const browserHistory = createBrowserHistory()
-const router = new Router({ routeTree, history: browserHistory })
+const router = createRouter({ routeTree, history: browserHistory })
 // Register your router for maximum type safety
-declare module '@tanstack/router' {
+declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router
   }
 }
-
 export { router }
