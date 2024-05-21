@@ -21,8 +21,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       i18next:
-        specifier: ^23.11.4
-        version: 23.11.4
+        specifier: ^23.11.5
+        version: 23.11.5
       i18next-browser-languagedetector:
         specifier: ^8.0.0
         version: 8.0.0
@@ -40,7 +40,7 @@ importers:
         version: 0.3.0(immer@10.1.1)(jotai@2.8.0(@types/react@18.3.2)(react@18.3.1))(react@18.3.1)
       next-i18next:
         specifier: ^15.3.0
-        version: 15.3.0(i18next@23.11.4)(next@13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@14.1.1(i18next@23.11.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 15.3.0(i18next@23.11.5)(next@13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@14.1.1(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -49,7 +49,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-i18next:
         specifier: ^14.1.1
-        version: 14.1.1(i18next@23.11.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 14.1.1(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-use:
         specifier: ^17.5.0
         version: 17.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -267,10 +267,6 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
-
-  '@babel/runtime@7.21.0':
-    resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.24.4':
     resolution: {integrity: sha512-dkxf7+hn8mFBwKjs9bvBlArzLVxVbS8usaPUDd5p2a9JCL9tB8OaOVN1isD4+Xyk4ns89/xeOmbQvgdK7IIVdA==}
@@ -796,28 +792,24 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@next/swc-linux-arm64-musl@13.2.4':
     resolution: {integrity: sha512-8rXr3WfmqSiYkb71qzuDP6I6R2T2tpkmf83elDN8z783N9nvTJf2E7eLx86wu2OJCi4T05nuxCsh4IOU3LQ5xw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@next/swc-linux-x64-gnu@13.2.4':
     resolution: {integrity: sha512-Ngxh51zGSlYJ4EfpKG4LI6WfquulNdtmHg1yuOYlaAr33KyPJp4HeN/tivBnAHcZkoNy0hh/SbwDyCnz5PFJQQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@next/swc-linux-x64-musl@13.2.4':
     resolution: {integrity: sha512-gOvwIYoSxd+j14LOcvJr+ekd9fwYT1RyMAHOp7znA10+l40wkFiMONPLWiZuHxfRk+Dy7YdNdDh3ImumvL6VwA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@next/swc-win32-arm64-msvc@13.2.4':
     resolution: {integrity: sha512-q3NJzcfClgBm4HvdcnoEncmztxrA5GXqKeiZ/hADvC56pwNALt3ngDC6t6qr1YW9V/EPDxCYeaX4zYxHciW4Dw==}
@@ -2185,8 +2177,8 @@ packages:
   i18next-fs-backend@2.3.1:
     resolution: {integrity: sha512-tvfXskmG/9o+TJ5Fxu54sSO5OkY6d+uMn+K6JiUGLJrwxAVfer+8V3nU8jq3ts9Pe5lXJv4b1N7foIjJ8Iy2Gg==}
 
-  i18next@23.11.4:
-    resolution: {integrity: sha512-CCUjtd5TfaCl+mLUzAA0uPSN+AVn4fP/kWCYt/hocPUwusTpMVczdrRyOBUwk6N05iH40qiKx6q1DoNJtBIwdg==}
+  i18next@23.11.5:
+    resolution: {integrity: sha512-41pvpVbW9rhZPk5xjCX2TPJi2861LEig/YRhUkY+1FQ2IQPS0bKUDYnEqY8XPPbB48h1uIwLnP9iiEfuSl20CA==}
 
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
@@ -3045,9 +3037,6 @@ packages:
     resolution: {integrity: sha512-fmfw4XgoDke3kdI6h4xcUz1dG8uaiv5q9gcEwLS4Pnth2kxT+GZ7YehS1JTMGBQmtV7Y4GFGbs2re2NqhdozUg==}
     engines: {node: '>= 0.4'}
 
-  regenerator-runtime@0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-
   regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
@@ -3858,10 +3847,6 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.4
       '@babel/helper-plugin-utils': 7.24.0
-
-  '@babel/runtime@7.21.0':
-    dependencies:
-      regenerator-runtime: 0.13.11
 
   '@babel/runtime@7.24.4':
     dependencies:
@@ -5928,7 +5913,7 @@ snapshots:
 
   i18next-fs-backend@2.3.1: {}
 
-  i18next@23.11.4:
+  i18next@23.11.5:
     dependencies:
       '@babel/runtime': 7.24.4
 
@@ -6393,17 +6378,17 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next-i18next@15.3.0(i18next@23.11.4)(next@13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@14.1.1(i18next@23.11.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  next-i18next@15.3.0(i18next@23.11.5)(next@13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@14.1.1(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.24.4
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.29.1
       hoist-non-react-statics: 3.3.2
-      i18next: 23.11.4
+      i18next: 23.11.5
       i18next-fs-backend: 2.3.1
       next: 13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
-      react-i18next: 14.1.1(i18next@23.11.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-i18next: 14.1.1(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   next@13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -6698,11 +6683,11 @@ snapshots:
       '@babel/runtime': 7.24.4
       react: 18.3.1
 
-  react-i18next@14.1.1(i18next@23.11.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-i18next@14.1.1(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.24.4
       html-parse-stringify: 3.0.1
-      i18next: 23.11.4
+      i18next: 23.11.5
       react: 18.3.1
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
@@ -6821,8 +6806,6 @@ snapshots:
       globalthis: 1.0.3
       which-builtin-type: 1.1.3
 
-  regenerator-runtime@0.13.11: {}
-
   regenerator-runtime@0.14.1: {}
 
   regexp.prototype.flags@1.5.2:
@@ -6891,7 +6874,7 @@ snapshots:
 
   rtl-css-js@1.16.1:
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.24.4
 
   run-parallel@1.2.0:
     dependencies:
