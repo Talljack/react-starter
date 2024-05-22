@@ -36,8 +36,8 @@ importers:
         specifier: ^0.9.1
         version: 0.9.1(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(redux@4.2.1)
       jotai-immer:
-        specifier: ^0.3.0
-        version: 0.3.0(immer@10.1.1)(jotai@2.8.0(@types/react@18.3.2)(react@18.3.1))(react@18.3.1)
+        specifier: ^0.4.0
+        version: 0.4.0(immer@10.1.1)(jotai@2.8.0(@types/react@18.3.2)(react@18.3.1))
       next-i18next:
         specifier: ^15.3.0
         version: 15.3.0(i18next@23.11.4)(next@13.2.4(@babel/core@7.24.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@14.1.1(i18next@23.11.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -796,28 +796,24 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@next/swc-linux-arm64-musl@13.2.4':
     resolution: {integrity: sha512-8rXr3WfmqSiYkb71qzuDP6I6R2T2tpkmf83elDN8z783N9nvTJf2E7eLx86wu2OJCi4T05nuxCsh4IOU3LQ5xw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@next/swc-linux-x64-gnu@13.2.4':
     resolution: {integrity: sha512-Ngxh51zGSlYJ4EfpKG4LI6WfquulNdtmHg1yuOYlaAr33KyPJp4HeN/tivBnAHcZkoNy0hh/SbwDyCnz5PFJQQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@next/swc-linux-x64-musl@13.2.4':
     resolution: {integrity: sha512-gOvwIYoSxd+j14LOcvJr+ekd9fwYT1RyMAHOp7znA10+l40wkFiMONPLWiZuHxfRk+Dy7YdNdDh3ImumvL6VwA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@next/swc-win32-arm64-msvc@13.2.4':
     resolution: {integrity: sha512-q3NJzcfClgBm4HvdcnoEncmztxrA5GXqKeiZ/hADvC56pwNALt3ngDC6t6qr1YW9V/EPDxCYeaX4zYxHciW4Dw==}
@@ -2405,12 +2401,11 @@ packages:
     peerDependencies:
       react: '>=17.0.0'
 
-  jotai-immer@0.3.0:
-    resolution: {integrity: sha512-k+o4rWfWWLyHfucHAdoiN+l8flxMrKC/bEFvJA98znj+kbPW5R90EPa1u8mhWLJTABW3xjAp7Z3kyD3FVi0Hgw==}
+  jotai-immer@0.4.0:
+    resolution: {integrity: sha512-tE5kqHMG5II+rKY2BfTEjGLaRzjCgM+PxiKMLGnlbQ8RezSQUO30WOJ86TzqAfpNCcKJJAEhXJkriiuU0sTh+Q==}
     peerDependencies:
-      immer: '*'
+      immer: '>=9.0.0'
       jotai: '>=2.0.0'
-      react: '>=17.0.0'
 
   jotai@2.8.0:
     resolution: {integrity: sha512-yZNMC36FdLOksOr8qga0yLf14miCJlEThlp5DeFJNnqzm2+ZG7wLcJzoOyij5K6U6Xlc5ljQqPDlJRgqW0Y18g==}
@@ -6158,11 +6153,10 @@ snapshots:
       - react-dom
       - redux
 
-  jotai-immer@0.3.0(immer@10.1.1)(jotai@2.8.0(@types/react@18.3.2)(react@18.3.1))(react@18.3.1):
+  jotai-immer@0.4.0(immer@10.1.1)(jotai@2.8.0(@types/react@18.3.2)(react@18.3.1)):
     dependencies:
       immer: 10.1.1
       jotai: 2.8.0(@types/react@18.3.2)(react@18.3.1)
-      react: 18.3.1
 
   jotai@2.8.0(@types/react@18.3.2)(react@18.3.1):
     optionalDependencies:
