@@ -30,7 +30,7 @@
     "test:cov": "vitest run --coverage"
   },
   "dependencies": {
-    "@headlessui/react": "^2.1.0",
+    "@headlessui/react": "^2.1.2",
     "@headlessui/tailwindcss": "^0.2.1",
     "@tanstack/react-router": "^1.40.0",
     "classnames": "^2.5.1",
