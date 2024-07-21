@@ -1,6 +1,7 @@
 import { Outlet } from '@tanstack/react-router'
 import React from 'react'
 import Theme from '@/components/Theme'
+import { Language } from '@/components/Language'
 
 const Root: React.FC = () => {
   return (
@@ -10,7 +11,10 @@ const Root: React.FC = () => {
       border-b-slate-300 dark:border-b-slate-800 shadow-md z-1 dark:bg-zinc-500 text-black dark:text-white"
       >
         My Template
-        <Theme />
+        <div className="flex items-center">
+          <Language />
+          <Theme />
+        </div>
       </div>
       <div
         className="h-full w-full items-center absolute bg-white dark:bg-zinc-600"

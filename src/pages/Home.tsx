@@ -1,5 +1,6 @@
 import React from 'react'
 import { atom, useAtom } from 'jotai'
+import { useTranslation } from 'react-i18next'
 import reactSvg from '@/assets/react.svg'
 import Button from '@/components/Common/Button'
 
@@ -7,6 +8,7 @@ import Button from '@/components/Common/Button'
 const countAtom = atom(0)
 const Home: React.FC = () => {
   const [count, setCount] = useAtom(countAtom)
+  const { t } = useTranslation()
   return (
     <div className="flex flex-col items-center justify-center w-full home">
       <div className="header w-[300px] h-[300px]">
@@ -14,6 +16,7 @@ const Home: React.FC = () => {
           <img src={reactSvg} className="w-full h-full logo react" alt="React logo" />
         </a>
       </div>
+      <div>{t('Welcome to React')}</div>
       <div className="gap-x-0">
         <Button dataTestId="count-btn" type="primary" onClick={() => setCount(count => count + 1)}>
           {count}
