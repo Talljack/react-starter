@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Button from './Common/Button'
-import { useTheme } from '@/state'
+import { useApp } from '@/state'
 
 /**
  *
@@ -71,7 +71,7 @@ function DarkIcon() {
   )
 }
 const Theme: React.FC = () => {
-  const { theme, updateTheme } = useTheme()
+  const { theme, updateTheme } = useApp()
   useEffect(() => {
     let setTheme = theme
     if (theme === 'system') {
