@@ -36,8 +36,8 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1(@types/react@18.3.3)(react@18.3.1)
       jotai-devtools:
-        specifier: ^0.10.0
-        version: 0.10.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(redux@5.0.1)
+        specifier: ^0.10.1
+        version: 0.10.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(redux@5.0.1)
       jotai-immer:
         specifier: ^0.4.1
         version: 0.4.1(immer@10.1.1)(jotai@2.9.1(@types/react@18.3.3)(react@18.3.1))
@@ -2185,8 +2185,8 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
-  jotai-devtools@0.10.0:
-    resolution: {integrity: sha512-ltGzJMam7sXbC827U1A2H6rMg+iiK5VzaBmanVfVpWS4fK9/8Mq5NLaG3n2OFtsQgI0nUDaNl/3NObI38sBx+A==}
+  jotai-devtools@0.10.1:
+    resolution: {integrity: sha512-l5AwNTC1tgcT5Pbjwcajlm+WC3we1qEMoTTe9qnItVIcOB8UIUAdphUrHKDWEIkG7lPgOAfnRgLE1mkvf+Jy3w==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=17.0.0'
@@ -2253,7 +2253,6 @@ packages:
     resolution: {integrity: sha512-Quz3MvAwHxVYNXsOByL7xI5EB2WYOeFswqaHIA3qOK3isRWTxiplBEocmmru6XmxDB2L7jDNYtYA4FyimoAFEw==}
     engines: {node: '>=8.17.0'}
     hasBin: true
-    bundledDependencies: []
 
   jsx-ast-utils@3.3.5:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
@@ -5699,7 +5698,7 @@ snapshots:
 
   jiti@1.21.6: {}
 
-  jotai-devtools@0.10.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(redux@5.0.1):
+  jotai-devtools@0.10.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(redux@5.0.1):
     dependencies:
       '@mantine/code-highlight': 7.11.2(@mantine/core@7.11.2(@mantine/hooks@7.11.2(react@18.3.1))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mantine/hooks@7.11.2(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mantine/core': 7.11.2(@mantine/hooks@7.11.2(react@18.3.1))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
