@@ -2,7 +2,7 @@
   "name": "react-starter",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.12.3",
   "description": "My React template",
   "author": "Talljack <yugang.cao12@gmail.com> (https://github.com/talljack)",
   "license": "MIT",
