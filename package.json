@@ -61,7 +61,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "esno": "^4.8.0",
-    "happy-dom": "^15.10.1",
+    "happy-dom": "^15.11.0",
     "lint-staged": "^15.2.10",
     "picocolors": "^1.1.1",
     "postcss": "^8.4.47",
