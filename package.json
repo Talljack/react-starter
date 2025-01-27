@@ -35,7 +35,7 @@
     "@heroicons/react": "^2.2.0",
     "@tanstack/react-router": "^1.85.3",
     "classnames": "^2.5.1",
-    "i18next": "^24.0.2",
+    "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "immer": "^10.1.1",
     "jotai": "^2.10.3",
