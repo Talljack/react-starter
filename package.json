@@ -36,7 +36,7 @@
     "@tanstack/react-router": "^1.105.0",
     "classnames": "^2.5.1",
     "i18next": "^24.2.2",
-    "i18next-browser-languagedetector": "^8.0.3",
+    "i18next-browser-languagedetector": "^8.0.4",
     "immer": "^10.1.1",
     "jotai": "^2.12.1",
     "jotai-devtools": "^0.10.1",
