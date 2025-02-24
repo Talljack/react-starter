@@ -33,7 +33,7 @@
     "@headlessui/react": "^2.2.0",
     "@headlessui/tailwindcss": "^0.2.2",
     "@heroicons/react": "^2.2.0",
-    "@tanstack/react-router": "^1.105.0",
+    "@tanstack/react-router": "^1.111.3",
     "classnames": "^2.5.1",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.3",
